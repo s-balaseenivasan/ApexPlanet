@@ -1,0 +1,40 @@
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#errorMessages p {
+    margin: 5px 0;
+    color: red;
+    font-weight: bold;
+}
+
+input:invalid, textarea:invalid {
+    border: 1px solid red;
+}
+
+input:valid, textarea:valid {
+    border: 1px solid green;
+}

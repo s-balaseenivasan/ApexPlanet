@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3e4e8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.todo-container {
+    width: 350px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+#todo-input {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+#todo-input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(72, 179, 41, 0.7);
+  }
+  
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+button:hover {
+    background-color: #45a049;
+  }
+  
+button:active {
+    background-color: #3e8e41;
+  }
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+li {
+    padding: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+li:hover {
+    background-color: #f0f8f0;
+    transform: translateX(5px);
+  }
+  
+
+li button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+li button:hover {
+    background-color: #e53935;
+  }
+  
+li button:active {
+    background-color: #d32f2f;
+  }
+  
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+li {
+    animation: slideIn 0.4s ease-out;
+  }
+  

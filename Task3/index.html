@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Quiz</h1>
+    </header>
+
+    <section id="quiz-section">
+        <div id="question-container">
+            <p id="question">Question goes here</p>
+            <div id="answers"></div>
+            <button id="next-btn" onclick="nextQuestion()" style="display:none;">Next Question</button>
+        </div>
+        <div id="score-container" style="display: none;">
+            <p id="score">Your score: 0 / 10</p>
+        </div>
+    </section>
+
+    <section id="api-section">
+        <h2>Joke of the Day</h2>
+        <div id="joke-container">
+            <p id="joke">Loading...</p>
+            <button onclick="fetchJoke()">Fetch New Joke</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

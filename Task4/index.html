@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="backToPortfolioBtn" onclick="scrollToSection('projects')">Projects</button>
+            <button class="backToPortfolioBtn" onclick="scrollToSection('about')">About</button>
+            <button class="backToPortfolioBtn" onclick="scrollToSection('contact')">Contact</button>
+        </nav>
+      </header>
+
+  <section id="projects">
+    <h1>Projects</h1>
+    <div class="project-card">
+      <img src="img/todo.jpg" alt="Project 1" width="100px" height="100px">
+      <h3>To-Do List App</h3>
+      <p>A simple to-do list app that uses localStorage to persist tasks.</p>
+      <a href="todo.html" class="btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <img src="img/product.jpg" alt="Project 2" width="100px" height="100px">
+      <h3>Product Listing</h3>
+      <p>A product listing page with sorting and filtering options.</p>
+      <a href="product-listing.html" class="btn">View Project</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h1>About Me</h1>
+    <p>I am a web developer passionate about building interactive and responsive websites.</p>
+    <img src="img/about.png" alt="Profile Image" class="profile-img">
+  </section>
+
+  <section id="contact">
+    <h1>Contact</h1>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      window.scrollTo({
+        top: section.offsetTop - 50,  
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>

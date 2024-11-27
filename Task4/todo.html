@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button id="backToPortfolioBtn" onclick="window.location.href='index.html'">Back to Portfolio</button>
+    </nav>
+  </header>
+
+  <section id="todo">
+    <h1>To-Do List</h1>
+    <input type="text" id="new-task" placeholder="Enter a new task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="task-list"></ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio</p>
+  </footer>
+
+  <script src="todo.js"></script>
+</body>
+</html>

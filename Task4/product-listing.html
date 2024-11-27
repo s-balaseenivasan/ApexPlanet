@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button id="backToPortfolioBtn" onclick="window.location.href='index.html'">Back to Portfolio</button>
+    </nav>
+  </header>
+
+  <section id="product-list">
+    <h1>Product Listing</h1>
+
+    <div class="filters">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+      </select>
+
+      <label for="sort">Sort By:</label>
+      <select id="sort">
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="rating">Rating</option>
+      </select>
+    </div>
+
+    <div id="product-listing" class="product-list">
+      <!-- Products will be dynamically inserted here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio</p>
+  </footer>
+
+  <script src="product.js"></script>
+</body>
+</html>
